@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.springboot.ssm.mapper.DogMapper">
+    <resultMap id="getDog" type="Dog">
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+    </resultMap>
+    <select id="getAllDog" resultType="Dog" resultMap="getDog">
+        SELECT * FROM dog
+    </select>
+    <select id="findById" parameterType="Integer" resultType="Dog">
+         select * from dog where id=#{id}
+    </select>
+
+</mapper>
