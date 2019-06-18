@@ -17,6 +17,7 @@ public class DogController {
     @RequestMapping("/getAllDog")
     public List<Dog> getAllDog() {
         List<Dog> allDog = dogService.getAllDog();
+        System.out.println("ceshi git");
         return allDog;
     }
 
