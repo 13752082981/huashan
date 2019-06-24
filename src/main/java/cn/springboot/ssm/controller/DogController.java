@@ -19,6 +19,7 @@ public class DogController {
         List<Dog> allDog = dogService.getAllDog();
         System.out.println("ceshi git 1");
         System.out.println("ceshi git 1");
+        System.out.println("add host_fix 1");
         return allDog;
     }
 
